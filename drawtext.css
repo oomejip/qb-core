@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital@0;1&display=swap');
+
+:root {
+    --primary-bg: rgba(23, 23, 23, 0);
+    --active-bg: #ffffff;
+    --font-color: white;
+}
+
+#drawtext-container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: "Alumni Sans", sans-serif;
+}
+
+.text {
+    position: absolute;
+    background: var(--primary-bg);
+    color: var(--font-color);
+    margin-top: 0.5rem;
+    padding: 0.45rem;
+    border-radius: 0.15rem;
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #ffffff00;
+    font-size: 1.5em; /* Hier voeg je de lettergrootte toe (pas aan zoals nodig) */
+}
+
+@media (width: 3840px) and (height: 2160px) {
+    #drawtext-container {
+        display: none;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        font-family: "Alumni Sans", sans-serif;
+        font-size: 1.0vh;
+    }
+}
+
+
+.text.pressed {
+    background: var(--active-bg);
+}
+
+.top {
+    left: 45vw;
+    top: -100px;
+}
+
+.top.show {
+    transition: 0.5s;
+    top: 10px;
+    opacity: 1;
+}
+
+.top.hide {
+    transition: 0.5s;
+    top: -100px;
+    opacity: 0;
+}
+
+.right {
+    top: 50%;
+    right: -100px;
+}
+
+.right.show {
+    transition: 0.5s;
+    right: 10px;
+    opacity: 1;
+}
+
+.right.hide {
+    transition: 0.5s;
+    right: -100px;
+    opacity: 0;
+}
+
+.left {
+    left: 48%;
+    top: 85%;
+}
+
+.left.show {
+    left: 48%;
+    top: 85%;
+    opacity: 1;
+}
+
+.left.hide {
+    left: 0;
+    opacity: 0;
+}
