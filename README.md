@@ -18,8 +18,8 @@ on the end you see the E and OPEN DOOR thats the text
 
 ### HTML part 
 
-<html>
-  <head>
+	<html>
+  	<head>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/quasar@2.12.0/dist/quasar.prod.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -30,13 +30,13 @@ on the end you see the E and OPEN DOOR thats the text
     <script type="module" src="js/app.js"></script>
     <script src="js/drawtext.js"></script>
     <link rel="stylesheet" href="css/drawtext.css">
-  </head>
-  <body style="font-family: 'Alumni Sans', sans-serif">
+ 	 </head>
+ 	 <body style="font-family: 'Alumni Sans', sans-serif">
     <div id="q-app" style="min-height: 100vh"></div>
     <div id="drawtext-container">
       <div id="text" class="text"></div>
     </div>
-  </body>
-</html>
+  	</body>
+	</html>
 
 - Replace or take the lines from the fonts and font-family i dont know if the new QBcore version is made in a other way i have one older version before the big update 
